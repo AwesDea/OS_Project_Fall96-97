@@ -36,7 +36,7 @@ void exec2() {
   close(pipe2[0]);
   close(pipe2[1]);
   // exec
-  execlp("grep", "grep", "Load", NULL);
+  execlp("grep", "grep", "CPU:", NULL);
   // exec didn't work, exit
   perror("bad exec grep root");
   _exit(1);
@@ -50,7 +50,7 @@ void exec3() {
   close(pipe2[0]);
   close(pipe2[1]);
   // exec
-  execlp("grep", "grep", "Load", NULL);
+  execlp("grep", "grep", "CPU:", NULL);
   // exec didn't work, exit
   perror("bad exec grep sbin");
   _exit(1);
